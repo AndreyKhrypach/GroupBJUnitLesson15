@@ -26,7 +26,9 @@ public class HomeAnimal {
     }
 
     public void setBark(String bark) {
-        this.bark = bark;
+        if (this.bark.isEmpty()) {
+            this.bark = bark;
+        }
     }
 
     public int getAge() {
